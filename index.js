@@ -4,6 +4,7 @@ const formidable = require('express-formidable')
 const animals = require('./routes/animals')
 const food = require('./routes/food')
 const accesorie = require('./routes/accesorie')
+const cors = require('cors')
 
 
 //set up express app
@@ -12,6 +13,12 @@ const app = express();
 
 //import db-connection
 require('./database')
+
+
+app.use("/", express.static('docs'))
+
+//allow request from other origins
+app.use(cors());
 
 //parse http form data
 app.use(formidable())
