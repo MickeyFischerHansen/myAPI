@@ -52,7 +52,7 @@ router.post('/animals', auth, function(request, response, next){
 
         response.status(201);
         response.json(animal);
-        
+
     } catch (error) {
        return next(error);
     }
