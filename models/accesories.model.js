@@ -6,7 +6,6 @@ const AccesorieSchema = new Schema({
     name: SchemaTypes.String,
     price: SchemaTypes.Decimal128,
     product: SchemaTypes.String
-    
 })
 
 const Accesorie = model("Accesorie", AccesorieSchema);

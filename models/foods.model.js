@@ -7,7 +7,6 @@ const FoodSchema = new Schema({
     price: SchemaTypes.Decimal128,
     weight: SchemaTypes.Number,
     animal: SchemaTypes.String,
-    
 })
 
 const Food = model("Food", FoodSchema);
