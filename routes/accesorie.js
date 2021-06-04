@@ -32,7 +32,7 @@ router.post('/accesorie', auth, function(request, response, next){
 
         response.status(201);
         response.json(accesorie);
-        
+
     } catch (error) {
        return next(error);
     }

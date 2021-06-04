@@ -33,7 +33,7 @@ router.post('/food', auth, function(request, response, next){
 
         response.status(201);
         response.json(food);
-        
+
     } catch (error) {
        return next(error);
     }
